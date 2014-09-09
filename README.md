@@ -130,6 +130,17 @@ Example:
     'hello'.capitalize();
        \=> 'Hello'
 
+### string.format([args])
+
+Format a string by index of an argument.
+Example:
+
+    "This {1} an {0}".format("example", "is");
+       \=> "This is an example"
+ 
+    "{1},{4},{2},{0},{3}".format(1, 2, 3, 4, 5);
+       \=> "2, 5, 3, 1, 4"
+
 ## Object Prototypes
 
 For objects some care must be taken before overwriting `Object.prototype`:
